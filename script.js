@@ -33,5 +33,5 @@ function changeBackgroundColor() {
 }
 
 function openInBlank() {
-  window.open(location.href, "_blank");
+  window.open("", "_blank").document.write("<html><head><meta http-equiv='refresh' content='0; url=" + location.href + "' /></head><body></body></html>");
 }
